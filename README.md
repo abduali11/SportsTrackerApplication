@@ -1,7 +1,6 @@
-Tämä projekti on urheiluaktiviteettien seurantasovellus. Voit kirjata urheiluaktiviteetteja, katsella aikaisemmin kirjattuja aktiviteetteja ja laskea, kuinka paljon aikaa olet käyttänyt urheiluun kuluvalla viikolla.
+Tämä tehtävä on urheiluaktiviteettien seurantasovellus. Voit kirjata urheiluaktiviteetteja, katsella aikaisemmin kirjattuja aktiviteetteja ja laskea, kuinka paljon aikaa olet käyttänyt urheiluun.
 
 Käyttöohjeet:
-
 Käynnistä sovellus.
 Valitse valikosta vaihtoehto:
 1: Kirjataksesi uuden aktiviteetin (nimi, kesto, päivämäärä).
