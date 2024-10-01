@@ -79,7 +79,7 @@ public class Sportlog {
                 String name = scanner.nextLine();
                 System.out.print("Enter duration (in minutes): ");
                 int duration = scanner.nextInt();
-                System.out.print("Enter date (YYYY-MM-DD): ");
+                System.out.print("Enter date (DD-MM-YYYY): ");
                 LocalDate date = LocalDate.parse(scanner.next());
                 tracker.logActivity(name, duration, date);
             } else if (option == 2) {
