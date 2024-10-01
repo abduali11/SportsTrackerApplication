@@ -1,4 +1,4 @@
-Tämä tehtävä on urheiluaktiviteettien seurantasovellus. Voit kirjata urheiluaktiviteetteja, katsella aikaisemmin kirjattuja aktiviteetteja ja laskea, kuinka paljon aikaa olet käyttänyt urheiluun.
+Tämä on urheiluaktiviteettien seurantasovellus. Voit kirjata urheiluaktiviteetteja, katsella aikaisemmin kirjattuja aktiviteetteja ja laskea, kuinka paljon aikaa olet käyttänyt urheiluun.
 
 Käyttöohjeet:
 Käynnistä sovellus.
