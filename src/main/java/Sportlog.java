@@ -4,15 +4,27 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Sportlog {
-    private static class Activity {
-        String name;
-        int duration; // in minutes
-        LocalDate date;
+    static class Activity {
+        private String name;
+        private int duration;
+        private LocalDate date;
 
         Activity(String name, int duration, LocalDate date) {
             this.name = name;
             this.duration = duration;
             this.date = date;
+        }
+
+        String getName() {
+            return name;
+        }
+
+        int getDuration() {
+            return duration;
+        }
+
+        LocalDate getDate() {
+            return date;
         }
 
         @Override
@@ -25,7 +37,8 @@ public class Sportlog {
         }
     }
 
-    private List<Activity> activities = new ArrayList<>();
+
+    List<Activity> activities = new ArrayList<>();
 
     public void logActivity(String name, int duration, LocalDate date) {
         activities.add(new Activity(name, duration, date));

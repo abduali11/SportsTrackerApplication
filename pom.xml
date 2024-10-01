@@ -37,7 +37,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Calculator</mainClass> <!-- Correct main class -->
+                            <mainClass>Sportlog</mainClass> <!-- Correct main class -->
                         </manifest>
                     </archive>
                 </configuration>
