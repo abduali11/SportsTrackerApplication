@@ -1,4 +1,6 @@
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -64,6 +66,7 @@ public class Sportlog {
     public static void main(String[] args) {
         Sportlog tracker = new Sportlog();
         Scanner scanner = new Scanner(System.in);
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
         while (true) {
             System.out.println("1. Log Activity");
@@ -79,9 +82,14 @@ public class Sportlog {
                 String name = scanner.nextLine();
                 System.out.print("Enter duration (in minutes): ");
                 int duration = scanner.nextInt();
-                System.out.print("Enter date (YYYY-MM-DD): ");
-                LocalDate date = LocalDate.parse(scanner.next());
-                tracker.logActivity(name, duration, date);
+                System.out.print("Enter date (DD-MM-YYYY): ");
+                String dateString = scanner.next();
+                try {
+                    LocalDate date = LocalDate.parse(dateString, formatter);
+                    tracker.logActivity(name, duration, date);
+                } catch (DateTimeParseException e) {
+                    System.out.println("Invalid date format. Please use DD-MM-YYYY.");
+                }
             } else if (option == 2) {
                 tracker.viewActivities();
             } else if (option == 3) {
